@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #FFD900;
+}
+.conteiner{
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-auto-columns: auto; */
+}
+.description{
+    background-color: #514988;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.description1{
+    margin-left: 15px;
+    margin-bottom: 30px;
+    /* display: flex; */
+    margin-top: 10px;
+}
+#img img{
+    width: 95%;
+}
+#text1{
+    margin-top: -65px;
+}
+#title{
+    text-transform: uppercase;
+    color: #FFD900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+#text1 h3{
+    color: #fff;
+    padding-bottom: 15px;
+}
+.paragrafo{
+    margin-top: 35px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+.timer{
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #514988;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.content h3{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: left;
+    color: #E33881;
+    margin-left: 15px;
+}
+#img{
+    margin-bottom: 10px;
+}
+.day{
+    margin-bottom: 25px;
+}
+.day h3{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 55px;
+    color: #F3C61F;
+}
+#img1{
+    margin-left: 45px;
+}
+.dat img{
+    padding-bottom: 10px;
+}
+#btn{
+    width: 300px;
+    height: 100px;
+    border: 0;
+    background-color: #514988;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+#btn:hover{
+    color: #F3C61F;
+    cursor: pointer;
+}
