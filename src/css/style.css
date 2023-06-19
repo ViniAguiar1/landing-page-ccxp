@@ -94,11 +94,12 @@
     margin-left: 55px;
     color: #F3C61F;
 }
-#img1{
+#quinta{
     margin-left: 45px;
 }
 .day img{
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 #btn{
     width: 300px;
@@ -116,4 +117,7 @@
 #btn:hover{
     color: #F3C61F;
     cursor: pointer;
+}
+.card-highlight{
+    box-shadow: 10px 10px 10px 10px grey;
 }
