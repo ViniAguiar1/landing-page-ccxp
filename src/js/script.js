@@ -1,3 +1,4 @@
+const ingressos = []
 const dia = document.getElementById("dia")
 const hora = document.getElementById("hora")
 const minuto = document.getElementById("minuto")
@@ -5,7 +6,7 @@ const segundo = document.getElementById("segundo")
 
 const lancamento = '01 dec 2023'
 
-function countDown() {
+countDown = () => {
     const dataLancamento = new Date(lancamento)
     const hoje = new Date()
 
@@ -22,19 +23,19 @@ function countDown() {
     segundo.innerHTML = formato(finalSegundos + "S") 
 }
 
-function formato(tempo) {
+formato = (tempo) => {
     return tempo < 10? `0${tempo}` : tempo
 }
 
 countDown()
 setInterval(countDown, 1000)
 
-function highlightCard(selector){
+highlightCard = (selector) => {
     let element = document.querySelector(selector)
     element.classList.toggle("card-highlight")
 }
 
-function checkKeyboardCode(){
+checkKeyboardCode = () => {
     document.addEventListener('keydown', (event) =>{
         let name = event.key
         let code = event.code
@@ -43,7 +44,7 @@ function checkKeyboardCode(){
     }, false)
 }
 
-function addKeyboardEventListener(){
+addKeyboardEventListener = () => {
     document.addEventListener('keydown', (event) => {
         let ingresso1 = document.getElementById("quinta")
         let ingresso2 = document.getElementById("sexta")
@@ -75,5 +76,20 @@ function addKeyboardEventListener(){
     }, false)
 }
 
+selectCard = (selector) => {
+    let element = document.querySelector(selector)
+    element.classList.toggle('card-selector')
+    if (ingressos.includes(selector)) ingressos.pop(selector)
+    else ingressos.push(selector)
+}
+
+showSelectorCards = () => {
+    if(ingressos.length > 0) {
+        alert(`Ingressos selecionados: ${ingressos}`)
+    }
+}
+
 // checkKeyboardCode()
 addKeyboardEventListener()
+selectCard()
+showSelectorCards()

@@ -56,15 +56,23 @@
       <div class="conteiner">
         <div class="day">
             <h3>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h3> <br>
-            <img id="quinta" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" src="./src/imgs/quinta.svg" alt="">
-            <img id="sexta" onmouseover="highlightCard('#sexta')" src="./src/imgs/sexta.svg" onmouseout="highlightCard('#sexta')" alt="">
-            <img id="sabado" onmouseover="highlightCard('#sabado')" src="./src/imgs/sabado.svg" onmouseout="highlightCard('#sabado')" alt="">
-            <img id="domingo" onmouseover="highlightCard('#domingo')" src="./src/imgs/domingo.svg" onmouseout="highlightCard('#domingo')" alt="">
+            <img id="quinta" class="cards-ingressos" onclick="selectCard('#quinta')" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" src="./src/imgs/quinta.svg" alt="">
+            <img id="sexta" class="cards-ingressos" onclick="selectCard('#sexta')" onmouseover="highlightCard('#sexta')" src="./src/imgs/sexta.svg" onmouseout="highlightCard('#sexta')" alt="">
+            <img id="sabado"class="cards-ingressos" onclick="selectCard('#sabado')" onmouseover="highlightCard('#sabado')" src="./src/imgs/sabado.svg" onmouseout="highlightCard('#sabado')" alt="">
+            <img id="domingo" class="cards-ingressos" onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')" src="./src/imgs/domingo.svg" onmouseout="highlightCard('#domingo')" alt="">
         </div>
         <div>
-            <button id="btn"><strong>garanta o seu!</strong></button>
+            <button onclick="showSelectorCards()" id="btn"><strong>garanta o seu!</strong></button>
         </div>
       </div>
+
+      <!--form-->
+      <!-- <div class="conteiner">
+        <form action="https://www.google.com" method="post">
+            <input type="email" placeholder="Digite seu email" required> 
+            <input type="submit" name="" id="">
+        </form>
+      </div> -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
       <script src="./src/js/script.js"></script>
 </body>
